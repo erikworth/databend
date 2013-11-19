@@ -12,13 +12,14 @@ def data_bend(input_file, output_file):
     # preserve header data
     header = data[:500]
     core = data[500:]
+    data_size = len(core)
 
     randstring = ''
 
     #core = pre + sample + post
 
     for x in range(randint(1,10)):    
-        for y in range(randint(1,150)):
+        for y in range(randint(1,300)):
             randstring += choice(string.letters + string.digits)
 
         corelist = list(core)
